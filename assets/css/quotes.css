@@ -1,0 +1,73 @@
+html {
+    font-family: Merriweather, Georgia, serif;
+}
+
+body {
+    padding: 2rem calc((100% - 600px)/2);
+    background: #b37171;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h3 {
+    margin: 0.5rem 0 2rem 0;
+    font-family: Roboto, Calibri, sans-serif;
+}
+
+h3, h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.7);
+}
+
+a:link, a:hover, a:active, a:visited {
+    color: white;
+}
+
+hr {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    position: relative;
+    background: white;
+    box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.3);
+}
+.container:nth-of-type(2n) {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.container .copy {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: lightgray;
+}
+.container p {
+    width: 600px;
+    max-width: calc(100vw - 4rem);
+    font-size: 14pt;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 3px;
+}
+.container p i {
+    font-family: Roboto, Calibri, sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 10pt;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 2rem;
+    }
+}

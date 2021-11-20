@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "futura pt", sans;
+  }
+  
+  .drybn-blog .drybn-blog__overlay {
+    position: relative;
+  }
+  .drybn-blog .blog-header-image {
+    background-image: url("/images/witchermount.jpg");
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 320px;
+    z-index: 2;
+  }
+  .drybn-blog .blog-header-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    /* background: linear-gradient(180deg, rgba(13, 60, 19, 0.6) 0%, #0d3c13 100%); */
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .drybn-blog .drybn-blog__content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 860px;
+    z-index: 2;
+  }
+  .drybn-blog .blog-header {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    color: white;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-header {
+      width: calc(100% - 4rem);
+    }
+  }
+  .drybn-blog .blog-body {
+    position: relative;
+    width: calc(100% - 2rem);
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body {
+      border-radius: 1rem;
+      width: calc(100% - 20rem);
+      padding: 4rem 8rem;
+      box-shadow: -7px 0 7px -7px #999, 7px 0 7px -7px #999;
+    }
+  }
+  .drybn-blog .blog-body .featured-image,
+  .drybn-blog .blog-body .featured-image--right {
+    display: block;
+    width: 100%;
+    height: 260px;
+    border-radius: 1rem;
+    position: relative;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image,
+  .drybn-blog .blog-body .featured-image--right {
+      width: 240px;
+      height: 260px;
+      float: right;
+      /* USUALLY CSS SIN BUT VALID IN THIS CASE */
+    }
+  }
+  .drybn-blog .blog-body .featured-image img,
+  .drybn-blog .blog-body .featured-image--right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 4px solid #000;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image img,
+  .drybn-blog .blog-body .featured-image--right img {
+      width: 360px;
+      height: 260px;
+      position: absolute;
+      left: 30px;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image--left {
+      float: left;
+      /* USUALLY CSS SIN BUT VALID IN THIS CASE */
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image--left img {
+      width: 360px;
+      height: 260px;
+      position: absolute;
+      right: 30px;
+      left: unset;
+    }
+  }
+  .drybn-blog .blog-body {
+    position: relative;
+    width: calc(100% - 2rem);
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body {
+      border-radius: 1rem;
+      width: calc(100% - 20rem);
+      padding: 4rem 8rem;
+      box-shadow: -7px -2px 7px -7px #999, 7px -2px 7px -7px #999;
+    }
+  }
+  
+  .drybn-social-list {
+    margin: 5rem auto;
+  }
+  .drybn-social-list h3 {
+    text-align: center;
+  }
+  .drybn-social-list .social-list {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
