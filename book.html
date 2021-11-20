@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>bs4 candidates listing page - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<link href="assets/css/materialdesignicons.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/nice-select.min.css" rel="stylesheet">
+
+<div>
+    <h2 class="heading-section" style="font-size: 50px; text-decoration-color: black; text-align: center"><a
+            href="index.html" style="color: orangered"> E-Library </a> | Books</h2>
+</div>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-12">
+            <div class="show-results mt-5">
+                <div class="float-left">
+                    <h5 class="text-dark mb-0 pt-2">Showing Results : 1-6 of 24</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="left-sidebar">
+                <div class="accordion" id="accordionExample">
+                    <div class="card mt-4">
+                        <div class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                                   aria-describedby="search-addon" id="myInput"/>
+                            <button type="button" class="btn btn-outline-primary" onclick="">search</button>
+                        </div>
+
+                    </div>
+
+                    <div class="card mt-4">
+                        <a data-toggle="collapse" href="#collapsetwo" class="job-list" aria-expanded="true"
+                           aria-controls="collapsetwo">
+                            <div class="card-header" id="headingtwo">
+                                <h6 class="mb-0 text-dark f-18">Category</h6>
+                            </div>
+                        </a>
+                        <div id="collapsetwo" class="collapse show" aria-labelledby="headingtwo">
+                            <div class="card-body p-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck5" value="first-checkbox" data-category-target="1">
+                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck5">Education</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck6" value="second-checkbox" data-category-target="2">
+                                    <label class="custom-control-label ml-1 text-muted f-15"
+                                           for="customCheck6">Novel</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck7" value="third-checkbox" data-category-target="3">
+                                    <label class="custom-control-label ml-1 text-muted f-15"
+                                           for="customCheck7">History</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck8" value="fourth-checkbox" data-category-target="4">
+                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck8">Psychology</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck9" value="fifth-checkbox" data-category-target="5">
+                                    <label class="custom-control-label ml-1 text-muted f-15"
+                                           for="customCheck9">Medical</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck10" value="sixth-checkbox" data-category-target="6">
+                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck10">Technology</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck11" value="seventh-checkbox" data-category-target="7">
+                                    <label class="custom-control-label ml-1 text-muted f-15"
+                                           for="customCheck11">Comics</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck12" value="eighth-checkbox" data-category-target="8">
+                                    <label class="custom-control-label ml-1 text-muted f-15"
+                                           for="customCheck12">Science Fiction</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input category_filter"
+                                           id="customCheck13" value="ninth-checkbox" data-category-target="9">
+                                    <label class="custom-control-label ml-1 text-muted f-15"
+                                           for="customCheck13">Finance</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+            <div class="candidates-listing-item">
+                <div class="list-grid-item mt-4 p-2 myTable product" data-category="2">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="candidates-img float-left mr-4">
+                                <img src="bookimg/mov.jpg" alt=""
+                                     class="img-fluid d-block rounded">
+                            </div>
+                            <div class="candidates-list-desc job-single-meta  pt-2">
+                                <h5 class="mb-2 f-19"><a class="text-dark">The Merchant Of Venice</a></h5>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item mr-4">
+                                        <p class="text-muted f-15 mb-0">ISBN: 9781562546342</p>
+                                        <p class="f-15 mb-0"><a class="text-muted">Author: William Shakespeare</a></p>
+                                        <p class="text-muted f-15 mb-0">Publisher: Saddleback Educational
+                                            Publishing </p>
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-1 mb-0">Category: <strong style="color: rgb(69, 241, 69);">
+                                    Novel</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="candidates-list-fav-btn text-right">
+
+                                <div class="candidates-listing-btn mt-4">
+                                    <a href="pdf/The Merchant of Venice by William Shakespeare.pdf"
+                                       class="btn btn-outline btn-sm" target="_blank" download="">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-grid-item mt-4 p-2 myTable product" data-category="4">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="candidates-img float-left mr-4">
+                                <img src="bookimg/Peoplesoft.jpg" alt=""
+                                     class="img-fluid d-block rounded">
+                            </div>
+                            <div class="candidates-list-desc job-single-meta  pt-2">
+                                <h5 class="mb-2 f-19"><a class="text-dark">PeopleSoft PeopleTolls Tips and
+                                    Techniques</a></h5>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item mr-4">
+                                        <p class="text-muted f-15 mb-0">ISBN: 9780071664936</p>
+                                        <p class="f-15 mb-0"><a class="text-muted">Author: Jim Marion</a></p>
+                                        <p class="text-muted f-15 mb-0">Publisher: McGraw Hill</p>
+                                    </li>
+                                    <li class="list-inline-item">
+
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-1 mb-0">Category: <strong style="color: red;">
+                                    Psychology</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="candidates-list-fav-btn text-right">
+                                <div class="candidates-listing-btn mt-4">
+                                    <a href="pdf/PeopleSoft PeopleTools Tips and Techniques by Jim Marion.pdf"
+                                       class="btn btn-outline btn-sm" target="_blank" download="">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-grid-item mt-4 p-2 myTable product" data-category="1">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="candidates-img float-left mr-4">
+                                <img src="bookimg/artgallery.jpg" alt=""
+                                     class="img-fluid d-block rounded">
+                            </div>
+                            <div class="candidates-list-desc job-single-meta  pt-2">
+                                <h5 class="mb-2 f-19"><a class="text-dark">Art gallery theorems and algorithms</a></h5>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item mr-4">
+                                        <p class="text-muted f-15 mb-0">ISBN: 9780195039658</p>
+                                        <p class="f-15 mb-0"><a class="text-muted">Author: Joseph O'Rourke</a></p>
+                                        <p class="text-muted f-15 mb-0">Publisher: Oxford University Press</p>
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-1 mb-0">Category: <strong style="color: rgb(243, 243, 31)">Education</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="candidates-list-fav-btn text-right">
+                                <div class="candidates-listing-btn mt-4">
+                                    <a href="pdf/Art gallery theorems and algorithms by Joseph ORourke.djvu"
+                                       class="btn btn-outline btn-sm" target="_blank" download="">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-grid-item mt-4 p-2 myTable product" data-category="2">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="candidates-img float-left mr-4">
+                                <img src="bookimg/midsummer.jpg" alt=""
+                                     class="img-fluid d-block rounded">
+                            </div>
+                            <div class="candidates-list-desc job-single-meta  pt-2">
+                                <h5 class="mb-2 f-19"><a class="text-dark">A Midsummer Night's Dream</a></h5>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item mr-4">
+                                        <p class="text-muted f-15 mb-0">ISBN: 9781562549220</p>
+                                        <p class="f-15 mb-0"><a class="text-muted">Author: William Shakespeare</a></p>
+                                        <p class="text-muted f-15 mb-0">Publisher: Saddleback Educational Publishing</p>
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-1 mb-0">Category: <strong style="color: rgb(69, 241, 69);">
+                                    Novel</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="candidates-list-fav-btn text-right">
+                                <div class="candidates-listing-btn mt-4">
+                                    <a href="pdf/A Midsummer Nights Dream by William Shakespeare (z-lib.org).pdf"
+                                       class="btn btn-outline btn-sm" target="_blank" download="">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-grid-item mt-4 p-2 myTable product" data-category="1">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="candidates-img float-left mr-4">
+                                <img src="bookimg/algo.jpg" alt=""
+                                     class="img-fluid d-block rounded">
+                            </div>
+                            <div class="candidates-list-desc job-single-meta  pt-2">
+                                <h5 class="mb-2 f-19"><a class="text-dark">Algorithmic Learning Theory </a></h5>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item mr-4">
+                                        <p class="text-muted f-15 mb-0">ISBN: 9783540001706</p>
+                                        <p class="f-15 mb-0"><a class="text-muted">Author: Nicolo Cesa-Bianchi</a></p>
+                                        <p class="text-muted f-15 mb-0">Publisher: Springer-Verlag Berlin Heidelberg</p>
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-1 mb-0">Category: <strong style="color: rgb(243, 243, 31)">Education</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="candidates-list-fav-btn text-right">
+                                <div class="candidates-listing-btn mt-4">
+                                    <a href="pdf/Algo learning theory.pdf" class="btn btn-outline btn-sm"
+                                       target="_blank" download="">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-grid-item mt-4 p-2 myTable product" data-category="3">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="candidates-img float-left mr-4">
+                                <img src="bookimg/predict.jpg" alt=""
+                                     class="img-fluid d-block rounded">
+                            </div>
+                            <div class="candidates-list-desc job-single-meta  pt-2">
+                                <h5 class="mb-2 f-19"><a class="text-dark">Prediction, Learning, and Games</a></h5>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item mr-4">
+                                        <p class="text-muted f-15 mb-0">ISBN: 9780511191787</p>
+                                        <p class="f-15 mb-0"><a class="text-muted">Author: Nicolo Cesa-Bianchi</a></p>
+                                        <p class="text-muted f-15 mb-0">Publisher: Cambridge University Press </p>
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-1 mb-0">Category: <strong style="color: purple">History</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="candidates-list-fav-btn text-right">
+                                <div class="candidates-listing-btn mt-4">
+                                    <a href="pdf/Nicolo Cesa-Bianchi, Gabor Lugosi - Prediction, learning, and games.pdf"
+                                       class="btn btn-outline btn-sm" download="">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-grid-item mt-4 p-2 myTable product" data-category="3">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="candidates-img float-left mr-4">
+                            <img src="bookimg/Peoplesoft.jpg" alt=""
+                                 class="img-fluid d-block rounded">
+                        </div>
+                        <div class="candidates-list-desc job-single-meta  pt-2">
+                            <h5 class="mb-2 f-19"><a class="text-dark">The Indian English Novel: Nation,History and
+                                Narration</a></h5>
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item mr-4">
+                                    <p class="text-muted f-15 mb-0">ISBN: 9780199544386</p>
+                                    <p class="f-15 mb-0"><a class="text-muted">Author: Priyamvada Gopal</a></p>
+                                    <p class="text-muted f-15 mb-0">Publisher: Oxford University Press</p>
+                                </li>
+                                <li class="list-inline-item">
+
+                                </li>
+                            </ul>
+                            <p class="text-muted mt-1 mb-0">Category: <strong style="color: purple">History</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="candidates-list-fav-btn text-right">
+                            <div class="candidates-listing-btn mt-4">
+                                <a href="pdf/PeopleSoft PeopleTools Tips and Techniques by Jim Marion.pdf"
+                                   class="btn btn-outline btn-sm" target="_blank" download="">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-grid-item mt-4 p-2  myTable product" data-category="1">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="candidates-img float-left mr-4">
+                            <img src="bookimg/artgallery.jpg" alt=""
+                                 class="img-fluid d-block rounded">
+                        </div>
+                        <div class="candidates-list-desc job-single-meta  pt-2">
+                            <h5 class="mb-2 f-19"><a class="text-dark">Computational geometry in C</a></h5>
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item mr-4">
+                                    <p class="text-muted f-15 mb-0">ISBN: 9780521649766</p>
+                                    <p class="f-15 mb-0"><a class="text-muted">Author: Joseph O'Rourke</a></p>
+                                    <p class="text-muted f-15 mb-0">Publisher: Cambridge University Press </p>
+                                </li>
+                            </ul>
+                            <p class="text-muted mt-1 mb-0">Category: <strong
+                                    style="color: rgb(243, 243, 31)">Education</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="candidates-list-fav-btn text-right">
+                            <div class="candidates-listing-btn mt-4">
+                                <a href="pdf/Art gallery theorems and algorithms by Joseph ORourke.djvu"
+                                   class="btn btn-outline btn-sm" target="_blank" download="">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-grid-item mt-4 p-2">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="candidates-img float-left mr-4">
+                            <img src="bookimg/midsummer.jpg" alt=""
+                                 class="img-fluid d-block rounded">
+                        </div>
+                        <div class="candidates-list-desc job-single-meta  pt-2">
+                            <h5 class="mb-2 f-19"><a class="text-dark">Quimica Inorganica</a></h5>
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item mr-4">
+                                    <p class="text-muted f-15 mb-0">ISBN: 9788448116231</p>
+                                    <p class="f-15 mb-0"><a class="text-muted">Author: Glen E.Rodgers</a></p>
+                                    <p class="text-muted f-15 mb-0">Publisher: McGraw Hill</p>
+                                </li>
+                            </ul>
+                            <p class="text-muted mt-1 mb-0">Category: <strong style="color: rgb(243, 243, 31)">Education</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="candidates-list-fav-btn text-right">
+                            <div class="candidates-listing-btn mt-4">
+                                <a href="pdf/A Midsummer Nights Dream by William Shakespeare (z-lib.org).pdf" class="btn btn-outline btn-sm" target="_blank" download="">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <p>
+
+        </p>
+    </div>
+
+</div>
+
+<style type="text/css">
+    body {
+        margin-top: 20px;
+        background: white;
+    }
+
+    .candidates-listing-bg {
+        padding: 210px 0px 60px 0px;
+
+        background-size: cover;
+        position: relative;
+        background-position: center center;
+    }
+
+    .custom-checkbox .custom-control-input:checked ~ .custom-control-label:before {
+        background-color: orangered;
+        border-color: orangered;
+    }
+
+    .custom-checkbox .custom-control-input:focus ~ .custom-control-label:before {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .candidates-img img {
+        max-width: 90px;
+    }
+
+    .fav-icon i {
+        -webkit-text-stroke: 2px #ff4f6c;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fav-icon i:hover {
+        -webkit-text-stroke: 0px #ff4f6c;
+        -webkit-text-fill-color: #ff4f6c;
+    }
+
+    .candidates-list-desc {
+        overflow: hidden;
+    }
+
+    .candidates-right-details {
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+
+    .candidates-item-desc {
+        margin-left: 45px;
+    }
+
+    .list-grid-item {
+        border: 1px solid #ececec;
+        border-radius: 6px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .list-grid-item:hover {
+        -webkit-box-shadow: 0 0 20px 0px rgba(47, 47, 47, 0.09);
+        box-shadow: 0 0 20px 0px rgba(47, 47, 47, 0.09);
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        border-color: transparent;
+    }
+
+    .left-sidebar .card-body {
+        border-bottom: 1px solid #ececec;
+    }
+
+    .custom-control {
+        margin: 11px 20px;
+    }
+
+    .card-header {
+        background-color: transparent;
+        margin-bottom: 0 !important;
+    }
+
+    .pagination.job-pagination .page-link {
+        border-radius: 50% !important;
+        margin: 0 4px;
+        height: 46px;
+        width: 45px;
+        line-height: 29px;
+        text-align: center;
+        color: #777777;
+
+    }
+
+    .page-item.active .page-link {
+        background: linear-gradient(#FF4B2B, #FF416C);
+        border-color: orange;
+        color: #ffffff !important;
+    }
+
+    .f-14 {
+        font-size: 14px;
+    }
+
+    .btn-outline {
+        color: orangered;
+        border-color: orangered;
+    }
+
+    .btn-sm {
+        padding: 8px 22px;
+    }
+
+    .btn-sm:hover {
+        color: white;
+        background: linear-gradient(#FF4B2B, #FF416C);
+    }
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $(".myTable").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+        $(".myTable").show();
+    });
+
+
+</script>
+<script>
+    var $categoryFilters = $('.category_filter');
+    var $allProducts = $('.product');
+    //build out selectors for each category
+    var productsByCategory = {};
+    $categoryFilters.each(function () {
+        var category = $(this).data('category-target');
+        productsByCategory[category] = $allProducts.filter('[data-category=' + category + ']');
+    });
+
+    // now attach change handler to filters
+    $categoryFilters.on('change', function () {
+        $allProducts.hide();
+        $categoryFilters.each(function () {
+            var target = $(this).data('category-target');
+            if ($(this).is(':checked')) {
+                productsByCategory[target].show();
+            }
+
+        })
+    });
+</script>
+</body>
+</html>

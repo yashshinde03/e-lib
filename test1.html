@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<input class="category_filter" data-category-target="1" type="checkbox" value="first-checkbox" />
+<input class="category_filter" data-category-target="2" type="checkbox" value="second-checkbox" />
+<div class="product" data-category="1">Hello</div>
+<div class="product" data-category="2">Wath Bagh</div>
+<!--etc...-->
+<script>
+    // cache references to DOM elements to eliminate need to requery
+    var $categoryFilters = $('.category_filter');
+    var $allProducts = $('.product');
+    //build out selectors for each category
+    var productsByCategory = {};
+    $categoryFilters.each(function(){
+        var category = $(this).data('category-target');
+        productsByCategory[category] = $allProducts.filter('[data-category=' + category + ']');
+    });
+
+    // now attach change handler to filters
+    $categoryFilters.on('change', function() {
+        $allProducts.hide();
+        $categoryFilters.each(function() {
+            var target = $(this).data('category-target');
+            if($(this).is(':checked')) {
+                productsByCategory[target].show();
+            }
+
+    })});
+</script>
+</body>
+</html>
