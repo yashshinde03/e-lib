@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
             $username = $_POST['username'];
             $host = "localhost";
             $dbUsername = "root";
-            $dbPassword = "yrs@1234";
+            $dbPassword = "";
             $dbName = "e_lib";
             $conn = mysqli_connect($host, $dbUsername, $dbPassword, $dbName);
             if (!$conn) {
